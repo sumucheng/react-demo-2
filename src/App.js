@@ -1,14 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+function sayHi() {
+  alert("hi");
+}
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          编辑 <code>src/App.js</code>
         </p>
         <a
           className="App-link"
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => alert(1)}>click me</button>
       </header>
     </div>
   );
